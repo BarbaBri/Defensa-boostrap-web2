@@ -1,0 +1,29 @@
+.row{
+    border: 2px solid red;
+    background-color: coral;
+    text-align: center;
+}
+.btn-img {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    border: none;
+    width: 100px;
+    height: 50px;
+}
+.img-right {
+    max-width: 100%;
+    height: auto;
+}
+.container-table {
+    display: flex;
+    align-items: flex-start;
+    font-family:'Courier New', Courier, monospace;
+}
+.table-container {
+    flex: 1;
+}
+.image-container {
+    flex: 0 0 300px;
+    padding-left: 20px;
+} 

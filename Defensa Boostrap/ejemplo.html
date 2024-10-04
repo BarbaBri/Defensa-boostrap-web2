@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabla con Modales y Imagen</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Estilo para los botones con fondo de imagen */
+    .btn-img {
+      background-size: cover;
+      background-position: center;
+      color: white;
+      border: none;
+      width: 100px;
+      height: 50px;
+    }
+    /* Ajuste para la imagen */
+    .img-right {
+      max-width: 100%;
+      height: auto;
+    }
+    /* Ajuste para la tabla y contenedor */
+    .container-table {
+      display: flex;
+      align-items: flex-start;
+    }
+    .table-container {
+      flex: 1;
+    }
+    .image-container {
+      flex: 0 0 300px;
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container mt-5">
+  <div class="container-table">
+    <!-- Tabla -->
+    <div class="table-container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Item 1</td>
+            <td>
+              <button class="btn btn-img" style="background-image: url('img1.jpg');" data-bs-toggle="modal" data-bs-target="#modal1">Botón 1</button>
+              <button class="btn btn-img" style="background-image: url('img2.jpg');" data-bs-toggle="modal" data-bs-target="#modal2">Botón 2</button>
+              <button class="btn btn-img" style="background-image: url('img3.jpg');" data-bs-toggle="modal" data-bs-target="#modal3">Botón 3</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Item 2</td>
+            <td>
+              <button class="btn btn-img" style="background-image: url('img1.jpg');" data-bs-toggle="modal" data-bs-target="#modal1">Botón 1</button>
+              <button class="btn btn-img" style="background-image: url('img2.jpg');" data-bs-toggle="modal" data-bs-target="#modal2">Botón 2</button>
+              <button class="btn btn-img" style="background-image: url('img3.jpg');" data-bs-toggle="modal" data-bs-target="#modal3">Botón 3</button>
+            </td>
+          </tr>
+          <!-- Agrega más filas según sea necesario -->
+        </tbody>
+      </table>
+    </div>
+    
+    <!-- Imagen al lado derecho -->
+    <div class="image-container">
+      <img src="side-image.jpg" class="img-right" alt="Imagen lateral">
+    </div>
+  </div>
+</div>
+
+<!-- Modal 1 -->
+<div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal1Label">Modal 1</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Contenido del Modal 1.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal2Label">Modal 2</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Contenido del Modal 2.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal3Label">Modal 3</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Contenido del Modal 3.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
